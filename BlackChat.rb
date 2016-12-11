@@ -45,7 +45,7 @@ class BlackChat
 		end
 
 		@scrollbar = TkScrollbar.new(body, "command" => proc{|*args| @console.yview *args})
-		@scrollbar.configure("background", "gray13")
+		@scrollbar.configure("background", "gray87")
 		@scrollbar.configure("troughcolor", "gray13")
 		@scrollbar.configure("borderwidth", 0)
 		@scrollbar.configure("elementborderwidth", 0)
