@@ -64,11 +64,11 @@ class BlackChat
 		@input.bind("Return") do
 			if(@username.strip.empty?)
 				if(@login.exist?)
-					postmessage("Server: Please select a username otherwise, you won't be using my trash.")
+					postmessage("Please select a username otherwise, you won't be using my trash.")
 					@input.value = ""
 					@login.raise
 				else
-					postmessage("Server: Please select a username otherwise, you won't be using my trash.")
+					postmessage("Please select a username otherwise, you won't be using my trash.")
 					@input.value = ""
 					login_window()
 				end
@@ -111,7 +111,7 @@ class BlackChat
 
 		@logintext.bind("Return") do
 			@username = @logintext.get()
-			postmessage("Server: Username set to #{@username}")
+			postmessage("Username set to #{@username}")
 			@@users.push(@username)
 			@login.destroy()
 			connect()
