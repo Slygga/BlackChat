@@ -78,7 +78,7 @@ class BlackChat
 			end
 		end
 
-		postmessage("Server: Welcome to BlackChat")
+		postmessage("Welcome to BlackChat")
 	end
 
 	def login_window()
