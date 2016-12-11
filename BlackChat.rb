@@ -120,7 +120,7 @@ class BlackChat
 		@login.raise
 	end
 
-	def connect(ip = "localhost", port = 9595)
+	def connect(ip = "73.36.28.143", port = 9595)
 		@server = TCPSocket.open(ip, port)
 		@server.puts(@username)
 		recvmessage()
